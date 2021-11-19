@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* global styles */
 section {
   padding: 60px 0;
 }
@@ -67,19 +68,49 @@ img {
 }
 h4.name {
   font-size: 1rem;
-  padding: 15px 0 10px;
+  /* padding: 15px 0 10px; */
 }
 p.price {
   font-weight: 700;
   font-size: 1.2rem;
 }
-.image-preview {
+.items .image-preview {
   background: rgb(188, 190, 188);
   height: 300px;
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.btn {
+  margin: 30px auto 0;
+  display: block;
+  padding: 10px 30px;
+  background: none;
+  border: 2px solid aqua;
+  border-radius: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.products-grid h3 {
+  border-bottom: 1px solid snow;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.product {
+  display: flex;
+}
+.product .image-preview {
+  background: snow;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin-right: 20px;
 }
 
 /* const new = () => {
