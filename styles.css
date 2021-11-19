@@ -22,6 +22,10 @@ li a {
   font-weight: 700;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,6 +56,30 @@ li a {
   font-weight: 600;
   text-transform: uppercase;
   padding: 5px 7px;
+}
+.tabs-contents {
+  padding: 30px 0;
+}
+.tabs-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+h4.name {
+  font-size: 1rem;
+  padding: 15px 0 10px;
+}
+p.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.image-preview {
+  background: rgb(188, 190, 188);
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* const new = () => {
