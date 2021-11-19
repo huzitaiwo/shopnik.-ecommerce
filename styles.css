@@ -76,6 +76,8 @@ h1 {
   border-bottom: 2px solid #151b19;
   color: #151b19;
   margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .nav-links {
@@ -113,9 +115,10 @@ h1 {
 }
 .hero-main-banner p {
   margin-bottom: 60px;
+  color: #f5ad34;
 }
 .hero-banner {
-  background: rgb(205, 210, 216);
+  background: #f4f5f7;
   padding: 30px 60px;
   height: 300px;
 }
@@ -135,8 +138,8 @@ h1 {
   padding: 3px 0;
 }
 .tabs a.active {
-  border-bottom: 2px solid blue;
-  color: blue;
+  border-bottom: 2px solid #6e7ab7;
+  color: #6e7ab7;
 }
 .action {
   background: none;
@@ -162,7 +165,7 @@ p.price {
   font-size: 1.2rem;
 }
 .items .image-preview {
-  background: rgb(188, 190, 188);
+  background: #f5f5f5;
   height: 300px;
   padding: 30px;
   display: flex;
@@ -174,7 +177,7 @@ p.price {
   display: block;
   padding: 10px 30px;
   background: none;
-  border: 2px solid aqua;
+  border: 2px solid #b9e8da;
   border-radius: 3px;
   font-weight: 500;
   text-transform: uppercase;
