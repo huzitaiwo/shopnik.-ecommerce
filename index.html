@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="container">
+        <nav class="wrapper">
             <div class="logo">Shopnik<span class="dot">.</span></div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
@@ -23,13 +23,15 @@
         </nav>
     </header>
     <main class="container">
-        <section class="hero-section">
+        <div class="hero-section">
             <div class="hero-main-banner">
-                <img src="" alt="" />
-                <div class="content">
-                    <h1><span class="bold">Shopnik.</span> Number #1 Trusted Furniture Website.</h1>
-                    <p class="alert">coming soon in your door with a huge discount.</p>
-                    <a href="#" class="link">View Now</a>
+                <div class="wrapper">
+                    <img src="" alt="" />
+                    <div class="content">
+                        <h1><span class="bold">Shopnik.</span> Number #1 Trusted Furniture Website.</h1>
+                        <p class="alert">coming soon in your door with a huge discount.</p>
+                        <a href="#" class="link">View Now</a>
+                    </div>
                 </div>
             </div>
             <div class="hero-banner">
@@ -48,177 +50,185 @@
                     <a href="#" class="link">View Now</a>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="sales-section">
-            <div class="sales-top">
-                <ul class="tabs">
-                    <li><a href="#">Furniture</a></li>
-                    <li><a href="#">Lightning</a></li>
-                    <li><a href="#">Sofas</a></li>
-                    <li><a href="#">Chairs</a></li>
-                    <li><a class="active" href="#">All</a></li>
-                </ul>
-                <ul>
-                    <button class="action">Back</button>
-                    <span>|</span>
-                    <button class="action">Next</button>
-                </ul>
-            </div>
-            <div class="tabs-contents">
-                <div class="tabs-content" id="furniture">
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/round-wooden-table.jpg" alt="">
-                        </div>
-                        <h4 class="name">Buckle Wrap Wooden Table</h4>
-                        <p class="price">$52.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/round-wooden-table.jpg" alt="">
-                        </div>
-                        <h4 class="name">Wooden Teapot Via Jar</h4>
-                        <p class="price">$32.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/wooden-bluetooth-spaeker.jpg" alt="">
-                        </div>
-                        <h4 class="name">Wooden Bluetooth Speaker</h4>
-                        <p class="price">$23.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/tea-wooden-mug.jpg" alt="">
-                        </div>
-                        <h4 class="name">Wooden Coffee Mug</h4>
-                        <p class="price">$36.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/wood-chair.jpg" alt="">
-                        </div>
-                        <h4 class="name">Wooden Chair</h4>
-                        <p class="price">$45.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/black-wardrawer.jpg" alt="">
-                        </div>
-                        <h4 class="name">Black Wooden Wardrawer</h4>
-                        <p class="price">$52.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/black-wood-chair.jpg" alt="">
-                        </div>
-                        <h4 class="name">Black Chair - Wooden Craft</h4>
-                        <p class="price">$36.00</p>
-                    </div>
-                    <div class="items">
-                        <div class="image-preview">
-                            <img src="./images/plant-wall-decorator.webp" alt="">
-                        </div>
-                        <h4 class="name">Wall Decorator for Plant</h4>
-                        <p class="price">$23.00</p>
-                    </div>
+            <div class="wrapper">
+
+                <div class="sales-top">
+                    <ul class="tabs">
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Lightning</a></li>
+                        <li><a href="#">Sofas</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a class="active" href="#">All</a></li>
+                    </ul>
+                    <ul>
+                        <button class="action">Back</button>
+                        <span>|</span>
+                        <button class="action">Next</button>
+                    </ul>
                 </div>
-                <button href="#" class="btn">Go to shop</button>
+                <div class="tabs-contents">
+                    <div class="tabs-content" id="furniture">
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/round-wooden-table.jpg" alt="">
+                            </div>
+                            <h4 class="name">Buckle Wrap Wooden Table</h4>
+                            <p class="price">$52.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/round-wooden-table.jpg" alt="">
+                            </div>
+                            <h4 class="name">Wooden Teapot Via Jar</h4>
+                            <p class="price">$32.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/wooden-bluetooth-spaeker.jpg" alt="">
+                            </div>
+                            <h4 class="name">Wooden Bluetooth Speaker</h4>
+                            <p class="price">$23.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/tea-wooden-mug.jpg" alt="">
+                            </div>
+                            <h4 class="name">Wooden Coffee Mug</h4>
+                            <p class="price">$36.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/wood-chair.jpg" alt="">
+                            </div>
+                            <h4 class="name">Wooden Chair</h4>
+                            <p class="price">$45.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/black-wardrawer.jpg" alt="">
+                            </div>
+                            <h4 class="name">Black Wooden Wardrawer</h4>
+                            <p class="price">$52.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/black-wood-chair.jpg" alt="">
+                            </div>
+                            <h4 class="name">Black Chair - Wooden Craft</h4>
+                            <p class="price">$36.00</p>
+                        </div>
+                        <div class="items">
+                            <div class="image-preview">
+                                <img src="./images/plant-wall-decorator.webp" alt="">
+                            </div>
+                            <h4 class="name">Wall Decorator for Plant</h4>
+                            <p class="price">$23.00</p>
+                        </div>
+                    </div>
+                    <button href="#" class="btn">Go to shop</button>
+                </div>
             </div>
         </section>
         <section class="products-section">
             <div class="head">
-                <div class="content">
-                    <h2 class="secondary-heading"><span class="bold">Stylish</span> Minimal Chair</h2>
-                    <a href="#" class="link">View Now</a>
+                <div class="wrapper">
+                    <div class="content">
+                        <h2 class="secondary-heading"><span class="bold">Stylish</span> Minimal Chair</h2>
+                        <a href="#" class="link">View Now</a>
+                    </div>
+                    <img src="" alt="">
                 </div>
-                <img src="" alt="">
             </div>
-            <div class="products-grid">
-                <h3>Bestseller</h3>
-                <h3>New Arrival</h3>
-                <h3>Featured</h3>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/bamboo-mug.jpg" alt="">
+            <div class="wrapper">
+                <div class="products-grid">
+                    <h3>Bestseller</h3>
+                    <h3>New Arrival</h3>
+                    <h3>Featured</h3>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/bamboo-mug.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Bamboo Mug - Wood Craft</h4>
+                            <p class="price">$16.00</p>
+                        </div>
                     </div>
-                    <div class="details">
-                        <h4 class="name">Bamboo Mug - Wood Craft</h4>
-                        <p class="price">$16.00</p>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/wooden-table-lamp.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Wooden Table Lamp</h4>
+                            <p class="price">$45.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/wooden-stool.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Wooden Stool</h4>
+                            <p class="price">$20.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/dinning-table.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Dinnig Table for Family</h4>
+                            <p class="price">$200.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/black-wooden-chair.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Black Wood Chair</h4>
+                            <p class="price">$37.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/mirco-table.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Micro Dinning Table </h4>
+                            <p class="price">$37.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/wooden-chair.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Office Wood Chair</h4>
+                            <p class="price">$61.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/black-sofa.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Black Sofa - Wood Craft</h4>
+                            <p class="price">$729.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-preview">
+                            <img src="./images/dressing-table.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Dressing Table Kit</h4>
+                            <p class="price">$75.00</p>
+                        </div>
                     </div>
                 </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/wooden-table-lamp.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Wooden Table Lamp</h4>
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/wooden-stool.png" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Wooden Stool</h4>
-                        <p class="price">$20.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/dinning-table.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Dinnig Table for Family</h4>
-                        <p class="price">$200.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/black-wooden-chair.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Black Wood Chair</h4>
-                        <p class="price">$37.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/mirco-table.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Micro Dinning Table </h4>
-                        <p class="price">$37.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/wooden-chair.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Office Wood Chair</h4>
-                        <p class="price">$61.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/black-sofa.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Black Sofa - Wood Craft</h4>
-                        <p class="price">$729.00</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="image-preview">
-                        <img src="./images/dressing-table.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4 class="name">Dressing Table Kit</h4>
-                        <p class="price">$75.00</p>
-                    </div>
-                </div>
+
             </div>
         </section>
     </main>
