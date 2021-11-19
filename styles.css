@@ -158,11 +158,13 @@ h1 {
 }
 h4.name {
   font-size: 1rem;
-  /* padding: 15px 0 10px; */
+  color: #a7a7a7;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 p.price {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .items .image-preview {
   background: #f5f5f5;
@@ -171,6 +173,7 @@ p.price {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .btn {
   margin: 30px auto 0;
@@ -183,7 +186,7 @@ p.price {
   text-transform: uppercase;
 }
 .head {
-  background: rgb(188, 190, 188);
+  background: #f4f5f7;
   padding: 30px 0;
   margin-bottom: 60px;
 }
@@ -193,7 +196,7 @@ p.price {
   gap: 30px;
 }
 .products-grid h3 {
-  border-bottom: 1px solid snow;
+  border-bottom: 2px solid #f5f5f5;
   padding: 10px 0;
   text-transform: uppercase;
 }
@@ -201,7 +204,7 @@ p.price {
   display: flex;
 }
 .product .image-preview {
-  background: snow;
+  background: #f5f5f5;
   width: 100px;
   height: 100px;
   padding: 10px;
