@@ -397,8 +397,41 @@ footer small {
     gap: 15px;
   }
   .products-grid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
   }
+  .showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .case {
+    padding: 30px;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .decoration {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-description {
+    grid-column: auto;
+    text-align: left;
+    max-width: none;
+  }
 }
+
+/* @media (max-width: 700px) {
+  .tabs-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
