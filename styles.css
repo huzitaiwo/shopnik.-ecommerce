@@ -11,7 +11,8 @@
 body {
   color: #151b19;
 }
-section {
+section,
+footer {
   padding: 60px 0;
 }
 
@@ -296,7 +297,60 @@ p.price {
   height: 200px;
   object-fit: cover;
 }
-
 img.main {
   grid-column: 4/6;
+}
+footer {
+  background: #48c4a0;
+  color: #fff;
+  font-size: 0.9rem;
+}
+footer .wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.8fr 1.5fr;
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 15px;
+}
+footer .logo {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding: 0;
+}
+footer h3 {
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer h4 {
+  font-weight: 400;
+}
+footer p {
+  font-weight: 300;
+}
+footer small {
+  color: rgba(255, 255, 255, 0.6);
+}
+.line {
+  width: 70px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.footer-links li {
+  padding-bottom: 10px;
+}
+.footer-links a {
+  color: #fff;
+  text-transform: none;
+  font-weight: 300;
+}
+.news {
+  display: flex;
+  margin-bottom: 10px;
+}
+.news img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
 }
