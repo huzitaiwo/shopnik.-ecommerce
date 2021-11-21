@@ -437,6 +437,9 @@ footer small {
     z-index: 1;
     display: none;
   }
+  .nav-links.active {
+    display: block;
+  }
   .nav-links li {
     padding-bottom: 30px;
   }
