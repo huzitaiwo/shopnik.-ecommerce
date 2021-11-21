@@ -25,6 +25,7 @@ li a {
   color: #151b19;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 3px 5px;
 }
 button {
   cursor: pointer;
@@ -80,7 +81,6 @@ h1 {
   text-transform: uppercase;
   font-weight: 500;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -96,6 +96,24 @@ h1 {
 }
 .dot {
   color: #34cd99;
+}
+.hamburger,
+.search {
+  padding: 2px 5px 0;
+  background: #48c4a0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+}
+.search {
+  background: none;
+}
+.hamburger img,
+.search img {
+  width: 30px;
 }
 .hero-section,
 .sales-section,
@@ -316,6 +334,8 @@ footer .wrapper {
   display: grid;
   grid-template-columns: 1.5fr 1fr 0.8fr 1.5fr;
   gap: 30px;
+  /* display: flex;
+  justify-content: space-between; */
 }
 footer .logo {
   margin-bottom: 20px;
@@ -329,6 +349,9 @@ footer h3 {
 }
 footer h4 {
   font-weight: 400;
+}
+footer img {
+  width: 20px;
 }
 footer p {
   font-weight: 300;
@@ -349,6 +372,15 @@ footer small {
   color: #fff;
   text-transform: none;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+.brands {
+  display: flex;
+  align-items: center;
+}
+.brands li {
+  margin-right: 15px;
 }
 .news {
   display: flex;
@@ -390,8 +422,29 @@ footer small {
     min-width: 100%;
     overflow-x: scroll;
   }
+  .logo {
+    flex: 1;
+  }
   .nav-links {
+    padding: 30px 30px 0;
+    background: #48c4a0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 15vh;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
     display: none;
+  }
+  .nav-links li {
+    padding-bottom: 30px;
+  }
+  .nav-links a {
+    color: #fff;
+  }
+  .hamburger {
+    display: initial;
   }
   .hero-banner {
     grid-column: 1/3;
@@ -438,6 +491,9 @@ footer small {
   }
   nav {
     min-height: 10vh;
+  }
+  .nav-links {
+    top: 10vh;
   }
   .hero-section,
   .sales-section,
