@@ -612,7 +612,7 @@ footer small {
   .items .image-preview,
   .decoration .image-preview {
     height: auto;
-    /* padding: 15px; */
+    padding: 15px;
   }
   .items .image-preview img {
     width: 150px;
