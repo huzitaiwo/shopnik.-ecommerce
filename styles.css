@@ -610,7 +610,7 @@ footer small {
     grid-column: auto;
   }
   .tabs-content {
-    grid-template-rows: repeat(4, 350px);
+    grid-template-rows: repeat(4, 330px);
   }
   .items:nth-child(even) {
     align-self: end;
