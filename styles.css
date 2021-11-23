@@ -71,6 +71,9 @@ h1 {
 .image-preview {
   background: none;
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* header contents */
@@ -223,9 +226,6 @@ p.price {
   border-radius: 15px;
   height: 200px;
   padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 15px;
 }
 .btn {
@@ -322,7 +322,8 @@ p.price {
   display: flex;
 }
 .decoration-content {
-  max-width: 300px;
+  min-width: 250px;
+  margin-right: 15px;
 }
 .decoration-grid {
   display: grid;
@@ -331,13 +332,8 @@ p.price {
 }
 .decoration .image-preview {
   border-radius: 18px;
-  padding: 30px;
   height: 300px;
   margin-bottom: 15px;
-}
-.decoration .image-preview img {
-  height: 100%;
-  object-fit: cover;
 }
 .divider {
   height: 2px;
@@ -559,6 +555,9 @@ footer small {
   .banner-chair {
     align-self: flex-end;
   }
+  .items .image-preview {
+    padding: 50px;
+  }
   .tabs-content,
   .decoration-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -601,8 +600,7 @@ footer small {
     font-size: 1.7rem;
   }
   .hero-section,
-  .decoration-grid,
-  .tabs-content {
+  .decoration-grid {
     grid-template-columns: 1fr;
     gap: 15px;
   }
@@ -610,6 +608,19 @@ footer small {
   .hero-banner {
     min-height: auto;
     grid-column: auto;
+  }
+  .items {
+    height: 350px;
+    align-content: end;
+  }
+  .items:nth-child(odd) {
+    align-items: flex-end;
+  }
+  .items .image-preview {
+    padding: 15px;
+  }
+  .decoration .image-preview {
+    height: auto;
   }
   .head {
     margin-bottom: 15px;
