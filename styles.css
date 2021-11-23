@@ -15,11 +15,9 @@ section,
 footer {
   padding: 60px 0;
 }
-
 li {
   list-style: none;
 }
-
 li a {
   text-decoration: none;
   color: #151b19;
@@ -30,11 +28,15 @@ li a {
 button {
   cursor: pointer;
 }
-
 img {
   width: 100%;
 }
-
+h1 {
+  font-weight: 400;
+  max-width: 450px;
+  line-height: 1.4;
+  font-size: 2rem;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,22 +44,6 @@ img {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-}
-header {
-  background: #f4f5f7;
-  min-height: 20vh;
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 15vh;
-}
-h1 {
-  font-weight: 400;
-  max-width: 450px;
-  line-height: 1.4;
-  font-size: 2rem;
 }
 .bold {
   font-weight: 600;
@@ -81,6 +67,17 @@ h1 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.9rem;
+}
+/* header contents */
+header {
+  background: #f4f5f7;
+  min-height: 20vh;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 15vh;
 }
 .nav-links {
   display: flex;
@@ -186,9 +183,6 @@ h1 {
   border-bottom: 2px solid #6e7ab7;
   color: #6e7ab7;
 }
-ul.actions {
-  min-width: 115px;
-}
 .action {
   background: none;
   border: none;
@@ -203,6 +197,10 @@ ul.actions {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  display: none;
+}
+.tabs-content.active {
+  display: grid;
 }
 h4.name {
   font-size: 1rem;
@@ -360,8 +358,6 @@ footer .wrapper {
   display: grid;
   grid-template-columns: 1.5fr 1fr 0.8fr 1.5fr;
   gap: 30px;
-  /* display: flex;
-  justify-content: space-between; */
 }
 footer .logo {
   margin-bottom: 20px;
@@ -457,6 +453,9 @@ footer small {
   .sales-top {
     min-width: 100%;
     overflow-x: scroll;
+  }
+  ul.actions {
+    min-width: 120px;
   }
   .logo {
     flex: 1;
@@ -608,14 +607,6 @@ footer small {
   .products-contents,
   .products-grid {
     gap: 15px;
-  }
-  .items .image-preview,
-  .decoration .image-preview {
-    height: auto;
-    padding: 15px;
-  }
-  .items .image-preview img {
-    width: 150px;
   }
   .gallery img {
     height: 100px;
