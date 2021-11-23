@@ -222,9 +222,6 @@ p.price {
   font-weight: 700;
   font-size: 1.1rem;
 }
-.items {
-  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05);
-} 
 .items .image-preview {
   border-radius: 15px;
   height: 200px;
