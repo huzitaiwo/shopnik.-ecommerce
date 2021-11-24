@@ -53,5 +53,27 @@ tabs.init();
 const items = document.querySelectorAll('.items');
 
 items.forEach(item => {
-    // item.addEventListener('mouseenter', showDetails)
+    item.addEventListener('mouseenter', (e) => showDetails(e));
+    item.addEventListener('mouseleave', (e) =>hideDetails(e));
 });
+
+function showDetails(e) {
+    let html = `
+        <div class="more">
+            <button class="fav">
+                <img src="./icons/favorite_outline.svg" alt="react icon"/>
+            </button>
+            <button class="add">
+                <h4><span class="md-none">Add to</span> cart</h4>
+            </button>
+            <button class="info">
+                <img src="./icons/more.svg" alt="react icon"/>
+            </button>
+        </div>
+    `;
+    e.target.children[0].innerHTML += html;
+}
+
+function hideDetails(e) {
+    e.target.children[0].children[1].remove();
+}
