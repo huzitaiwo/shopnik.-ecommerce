@@ -56,9 +56,6 @@ items.forEach(item => {
     item.addEventListener('mouseenter', (e) => showDetails(e));
     item.addEventListener('mouseleave', (e) =>hideDetails(e));
 });
-favorite.forEach((fav, i) => {
-    fav.addEventListener('click', (e) => addFavorite(e, i))
-});
 
 // functions
 
