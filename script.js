@@ -29,6 +29,7 @@ class Tabs {
         });
     }    
     toggleTabs(e) {
+        // prevent default anchor tag behavior
         e.preventDefault();
         // remove current active classes
         this.tabs.forEach(tab => tab.classList.remove('active'));
@@ -45,6 +46,23 @@ class Tabs {
 
     }
 }
-
 const tabs = new Tabs(document.querySelector('.sales-tabs'));
 tabs.init();
+
+// show item details hover effect
+const items = document.querySelectorAll('.items');
+
+items.forEach(item => {
+    item.addEventListener('mouseenter', showDetails)
+});
+
+function showDetails() {
+    let html = ``;
+    html = `
+        <div class="more">
+            <img class="love" src="./icons/" alt="react icon"/>
+            <h4>Add to cart</h4>
+            <img class="info" src="./icons/" alt="react icon"/>
+        </div>
+    `
+}
