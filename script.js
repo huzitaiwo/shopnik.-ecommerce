@@ -53,16 +53,5 @@ tabs.init();
 const items = document.querySelectorAll('.items');
 
 items.forEach(item => {
-    item.addEventListener('mouseenter', showDetails)
+    // item.addEventListener('mouseenter', showDetails)
 });
-
-function showDetails() {
-    let html = ``;
-    html = `
-        <div class="more">
-            <img class="love" src="./icons/" alt="react icon"/>
-            <h4>Add to cart</h4>
-            <img class="info" src="./icons/" alt="react icon"/>
-        </div>
-    `
-}
