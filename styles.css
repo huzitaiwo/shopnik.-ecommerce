@@ -558,6 +558,12 @@ footer small {
   .items .image-preview {
     padding: 50px;
   }
+  .tabs-content {
+    grid-template-rows: repeat(4, 310px);
+  }
+  .items:nth-child(even) {
+    align-self: end;
+  }
   .tabs-content,
   .decoration-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -608,12 +614,6 @@ footer small {
   .hero-banner {
     min-height: auto;
     grid-column: auto;
-  }
-  .tabs-content {
-    grid-template-rows: repeat(4, 330px);
-  }
-  .items:nth-child(even) {
-    align-self: end;
   }
   .items .image-preview {
     padding: 15px;
