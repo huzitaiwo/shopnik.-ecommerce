@@ -1,7 +1,9 @@
 const navigation = document.querySelector('.nav-links');
 const burgerMenu = document.querySelector('.hamburger');
 const burgerMenuIcon = document.querySelector('.hamburger img');
+const items = document.querySelectorAll('.items');
 
+// reponsive navigation bar feature
 burgerMenu.addEventListener('click', () => {
     navigation.classList.toggle('active');
 
@@ -49,13 +51,16 @@ class Tabs {
 const tabs = new Tabs(document.querySelector('.sales-tabs'));
 tabs.init();
 
-// show item details hover effect
-const items = document.querySelectorAll('.items');
-
+// show && hide item details hover effect
 items.forEach(item => {
     item.addEventListener('mouseenter', (e) => showDetails(e));
     item.addEventListener('mouseleave', (e) =>hideDetails(e));
 });
+favorite.forEach((fav, i) => {
+    fav.addEventListener('click', (e) => addFavorite(e, i))
+});
+
+// functions
 
 function showDetails(e) {
     let html = `
@@ -76,4 +81,9 @@ function showDetails(e) {
 
 function hideDetails(e) {
     e.target.children[0].children[1].remove();
+}
+
+function addFavorite(e, i) {
+    e.target.children[0].src = './icon/favorite.svg';
+    console.log(i);
 }
