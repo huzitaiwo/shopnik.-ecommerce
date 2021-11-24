@@ -74,6 +74,14 @@ function showDetails(e) {
         </div>
     `;
     e.target.children[0].innerHTML += html;
+    const favorite = document.querySelectorAll('.fav');
+    const favoriteIcon = document.querySelectorAll('.fav img');
+
+    favorite.forEach((fav, i) => {
+        fav.addEventListener('click', () => {
+            favoriteIcon[i].src = './icons/favorite.svg'
+        })
+    });
 }
 
 function hideDetails(e) {
@@ -84,3 +92,4 @@ function addFavorite(e, i) {
     e.target.children[0].src = './icon/favorite.svg';
     console.log(i);
 }
+
