@@ -68,9 +68,9 @@ function showDetails(e) {
             <button class="add">
                 <h4><span class="md-none">Add to</span> cart</h4>
             </button>
-            <button class="info">
+            <a href="/item.html" class="info">
                 <img src="./icons/more.svg" alt="react icon"/>
-            </button>
+            </a>
         </div>
     `;
     e.target.children[0].innerHTML += html;

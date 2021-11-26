@@ -104,7 +104,8 @@ nav {
   color: #34cd99;
 }
 .hamburger,
-.search {
+.cart {
+  display: inline-block;
   padding: 2px 5px 0;
   background: #48c4a0;
   border: none;
@@ -114,7 +115,7 @@ nav {
 .hamburger {
   display: none;
 }
-.search {
+.cart {
   background: none;
 }
 .hamburger img,
@@ -673,4 +674,11 @@ footer small {
   h2.secondary-heading {
     font-size: 1.3rem;
   }
+}
+
+/*********** ITEMS PAGE ***********/
+.items-section {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  align-items: center;
 }
