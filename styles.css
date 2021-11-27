@@ -566,7 +566,7 @@ footer small {
 @media (max-width: 700px) {
   header {
     min-height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   nav {
     min-height: 10vh;
@@ -680,8 +680,10 @@ footer small {
 
 /*********** ITEMS PAGE ***********/
 .items-section {
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
-  align-items: center;
   background: linear-gradient(to right, #fff 70%, #48c4a0 70%);
+}
+.items-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
