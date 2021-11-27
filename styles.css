@@ -679,9 +679,9 @@ footer small {
 }
 
 /*********** ITEMS PAGE ***********/
-.items-section {
+/* .items-section {
   background: linear-gradient(to right, #fff 70%, #48c4a0 70%);
-}
+} */
 .items-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -693,12 +693,33 @@ h4.price {
   font-size: 1.8rem;
 }
 p.title {
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.45);
   font-size: 1.3rem;
-  padding: 15px 0;
+  padding: 5px 0 15px;
+}
+.add-to-cart {
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  background: none;
+  border: 1px solid #34cd99;
 }
 .item-paragraph {
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.55);
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin: 10px 0 15px;
+}
+.item-image {
+  order: 1;
+}
+
+@media (max-width: 900px) {
+  .items-section .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .item-image {
+    order: 0;
+  }
 }
