@@ -126,7 +126,8 @@ nav {
 /* main content */
 .hero-section,
 .sales-section,
-.products-section {
+.products-section,
+.items-section {
   position: relative;
   top: -5vh;
 }
@@ -575,7 +576,8 @@ footer small {
   }
   .hero-section,
   .sales-section,
-  .products-section {
+  .products-section,
+  .items-section {
     position: static;
   }
   .hero-main-banner .wrapper {
@@ -681,5 +683,5 @@ footer small {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
   align-items: center;
-  background: linear-gradient(to right, #fff 60%, #48c4a0 60%);
+  background: linear-gradient(to right, #fff 70%, #48c4a0 70%);
 }
