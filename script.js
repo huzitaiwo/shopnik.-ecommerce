@@ -24,7 +24,6 @@ class Tabs {
     init() {
         this.tabs.forEach(tab => {
             tab.addEventListener('click', e => {
-                console.log('clicked')
                 this.toggleTabs(e);
                 this.toggleContents(e);
             });
@@ -48,8 +47,10 @@ class Tabs {
 
     }
 }
-const tabs = new Tabs(document.querySelector('.sales-tab'));
-tabs.init();
+const salesTab = new Tabs(document.querySelector('.sales-tab'));
+salesTab.init();
+const itemsTab = new Tabs(document.querySelector('.items-tab'));
+itemsTab.init();
 
 // show && hide item details hover effect
 items.forEach(item => {
