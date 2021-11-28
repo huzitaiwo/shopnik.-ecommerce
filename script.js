@@ -48,13 +48,13 @@ class Tabs {
 
     }
 }
-const tabs = new Tabs(document.querySelector('.sales-tabs'));
+const tabs = new Tabs(document.querySelector('.sales-tab'));
 tabs.init();
 
 // show && hide item details hover effect
 items.forEach(item => {
     item.addEventListener('mouseenter', (e) => showDetails(e));
-    item.addEventListener('mouseleave', (e) =>hideDetails(e));
+    item.addEventListener('mouseleave', (e) => hideDetails(e));
 });
 
 // functions
