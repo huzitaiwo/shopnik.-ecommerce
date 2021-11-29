@@ -47,19 +47,8 @@ class Tabs {
 
     }
 }
-const salesTab = new Tabs(document.querySelector('.sales-tab'));
-salesTab.init();
-const itemsTab = new Tabs(document.querySelector('.items-tab'));
-itemsTab.init();
-
-// show && hide item details hover effect
-items.forEach(item => {
-    item.addEventListener('mouseenter', (e) => showDetails(e));
-    item.addEventListener('mouseleave', (e) => hideDetails(e));
-});
 
 // functions
-
 function showDetails(e) {
     let html = `
         <div class="more">
@@ -89,8 +78,22 @@ function hideDetails(e) {
     e.target.children[0].children[1].remove();
 }
 
-function addFavorite(e, i) {
-    e.target.children[0].src = './icon/favorite.svg';
-    console.log(i);
+// check different pages to execute script
+if(document.body.id === 'main') {
+    const salesTab = new Tabs(document.querySelector('.sales-tab'));
+    salesTab.init();
+
+    // show && hide item details hover effect
+    items.forEach(item => {
+        item.addEventListener('mouseenter', (e) => showDetails(e));
+        item.addEventListener('mouseleave', (e) => hideDetails(e));
+    });
+}
+if(document.body.id === 'item') {
+    const itemsTab = new Tabs(document.querySelector('.items-tab'));
+    itemsTab.init();
+}
+if(document.body.id === 'cart') {
+    console.log('main');
 }
 
