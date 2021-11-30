@@ -688,7 +688,8 @@ footer small {
   align-items: center;
 }
 h2.name,
-h4.price {
+h4.price,
+td.price {
   font-weight: 500;
   font-size: 1.8rem;
 }
