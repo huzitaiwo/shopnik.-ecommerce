@@ -104,7 +104,8 @@ nav {
   color: #34cd99;
 }
 .hamburger,
-.cart {
+.cart,
+.qty-add {
   display: inline-block;
   padding: 2px 5px 0;
   background: #48c4a0;
@@ -115,7 +116,8 @@ nav {
 .hamburger {
   display: none;
 }
-.cart {
+.cart,
+.qty-add {
   background: none;
 }
 .hamburger img,
@@ -742,4 +744,28 @@ p.title {
   .item-image {
     order: 0;
   }
+}
+
+/*********** CART PAGE ***********/
+table {
+  width: 100%;
+}
+tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+td {
+  text-align: center;
+}
+td.item {
+  text-align: left;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qty img {
+  width: 40px;
 }
