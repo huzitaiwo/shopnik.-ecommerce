@@ -749,17 +749,24 @@ p.title {
 /*********** CART PAGE ***********/
 table {
   width: 100%;
+  min-width: 600px;
+  overflow-x: scroll;
 }
 tr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
+th {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
 td {
   text-align: center;
 }
-td.item {
-  text-align: left;
+td.item img {
+  width: 150px;
 }
 .qty {
   display: flex;
