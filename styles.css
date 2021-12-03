@@ -96,6 +96,10 @@ nav {
 .nav-links a {
   font-weight: 500;
 }
+.go-back img {
+  width: 30px;
+  margin: 15px 0 0 15px;
+}
 .logo {
   font-size: 2rem;
   font-weight: 700;
