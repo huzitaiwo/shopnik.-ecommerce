@@ -245,7 +245,13 @@ p.price {
   justify-content: space-between;
   border-bottom: 2px solid #48c4a0;
   padding: 0 5px;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  pointer-events: none;
+}
+.more.active {
+  opacity: 1;
+  pointer-events: all;
 }
 .fav,
 .add,

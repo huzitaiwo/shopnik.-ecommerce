@@ -2,6 +2,7 @@ const navigation = document.querySelector('.nav-links');
 const burgerMenu = document.querySelector('.hamburger');
 const burgerMenuIcon = document.querySelector('.hamburger img');
 const items = document.querySelectorAll('.items');
+const moreDetails = document.querySelectorAll('.more');
 
 // reponsive navigation bar feature
 burgerMenu.addEventListener('click', () => {
@@ -49,34 +50,15 @@ class Tabs {
 }
 
 // functions
-function showDetails(e) {
-    let html = `
-        <div class="more">
-            <button class="fav">
-                <img src="./icons/favorite_outline.svg" alt="react icon"/>
-            </button>
-            <button class="add">
-                <h4><span class="md-none">Add to</span> cart</h4>
-            </button>
-            <a href="" class="info">
-                <img src="./icons/more.svg" alt="react icon"/>
-            </a>
-        </div>
-    `;
-    e.target.children[0].innerHTML += html;
-    const favorite = document.querySelectorAll('.fav');
-    const favoriteIcon = document.querySelectorAll('.fav img');
+// function showDetails(e) {
+//     moreDetails.forEach(details => {
+//         details.classList.add('active');
+//     })  
+// }
 
-    favorite.forEach((fav, i) => {
-        fav.addEventListener('click', () => {
-            favoriteIcon[i].src = './icons/favorite.svg'
-        })
-    });
-}
-
-function hideDetails(e) {
-    e.target.children[0].children[1].remove();
-}
+// function hideDetails(e) {
+//     e.target.children[0].children[1].remove();
+// }
 
 // check different pages to execute script
 if(document.body.id === 'main') {
@@ -84,9 +66,13 @@ if(document.body.id === 'main') {
     salesTab.init();
 
     // show && hide item details hover effect
-    items.forEach(item => {
-        // item.addEventListener('mouseenter', (e) => showDetails(e));
-        // item.addEventListener('mouseleave', (e) => hideDetails(e));
+    items.forEach((item, i) => {
+        item.addEventListener('mouseenter', () => {
+            moreDetails[i].classList.add('active');
+        })
+        item.addEventListener('mouseleave', () => {
+            moreDetails[i].classList.remove('active');
+        });
     });
 }
 if(document.body.id === 'item') {
