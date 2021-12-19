@@ -790,3 +790,12 @@ td.item img {
 .qty img {
   width: 40px;
 }
+
+@media (max-width: 700px) {
+  table {
+    min-width: 500px;
+  }
+  .cart-section {
+    overflow-x: scroll;
+  }
+}
