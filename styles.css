@@ -376,7 +376,7 @@ p.price {
   gap: 15px;
 }
 .decoration .image-preview {
-  border-radius: 18px;
+  /* border-radius: 18px; */
   height: 300px;
   margin-bottom: 15px;
 }
