@@ -267,7 +267,7 @@ p.price {
   /* font-weight: 500; */
 }
 .items .image-preview {
-  border-radius: 15px;
+  /* border-radius: 15px; */
   height: 200px;
   padding: 50px;
   margin-bottom: 15px;
