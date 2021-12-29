@@ -3,6 +3,7 @@ const burgerMenu = document.querySelector('.hamburger');
 const burgerMenuIcon = document.querySelector('.hamburger img');
 const items = document.querySelectorAll('.items');
 const moreDetails = document.querySelectorAll('.more');
+const favIcons = document.querySelectorAll('.fav img');
 
 // reponsive navigation bar feature
 burgerMenu.addEventListener('click', () => {
@@ -49,16 +50,6 @@ class Tabs {
     }
 }
 
-// functions
-// function showDetails(e) {
-//     moreDetails.forEach(details => {
-//         details.classList.add('active');
-//     })  
-// }
-
-// function hideDetails(e) {
-//     e.target.children[0].children[1].remove();
-// }
 
 // check different pages to execute script
 if(document.body.id === 'main') {
@@ -74,6 +65,11 @@ if(document.body.id === 'main') {
             moreDetails[i].classList.remove('active');
         });
     });
+
+    // add to favourite
+    favIcons.forEach(icon => {
+        icon.addEventListener('click', () => icon.src = './icons/favorite.svg')
+    })
 }
 if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
