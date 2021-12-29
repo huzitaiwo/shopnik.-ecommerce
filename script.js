@@ -76,6 +76,6 @@ if(document.body.id === 'item') {
     itemsTab.init();
 }
 if(document.body.id === 'cart') {
-    console.log('main');
+    console.log('cart');
 }
 
