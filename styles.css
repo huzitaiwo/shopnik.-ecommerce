@@ -374,20 +374,19 @@ p.price {
   display: flex;
   position: relative;
 }
-
 .width {
   width: 300px;
   position: absolute;
   right: 0;
   transform: translateY(-55%);
 }
-
 .trending {
   width: 400px;
   position: absolute;
   left: 0;
   bottom: 0;
 }
+
 /* decoration-content */
 .decoration {
   display: flex;
