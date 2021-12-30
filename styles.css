@@ -7,18 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.head .wrapper {
-  display: flex;
-  position: relative;
-}
-
-.width {
-  width: 300px;
-  position: absolute;
-  right: 0;
-  transform: translateY(-55%);
-}
-
 /* global styles */
 body {
   color: #151b19;
@@ -357,6 +345,7 @@ p.price {
   background: #ffedcd;
   grid-column: 4/5;
   grid-row: 1/3;
+  position: relative;
 }
 .case__4 {
   background: #e2f0df;
@@ -373,12 +362,31 @@ p.price {
 }
 .case__3 .category {
   color: #feb237;
+  overflow: hidden;
 }
 .case__4 .category {
   color: #82b574;
 }
 .case__5 .category {
   color: #8089c1;
+}
+.head .wrapper {
+  display: flex;
+  position: relative;
+}
+
+.width {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  transform: translateY(-55%);
+}
+
+.trending {
+  width: 400px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 /* decoration-content */
 .decoration {
