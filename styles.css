@@ -365,6 +365,10 @@ p.price {
 .case__1 .category {
   color: #fd6a76;
 }
+.case__1 a:hover {
+  color: #fd6a76;
+  border-bottom: 2px solid #fd6a76;
+}
 .case__2 .category {
   color: #65cead;
 }
