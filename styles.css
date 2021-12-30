@@ -7,6 +7,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+.head .wrapper {
+  display: flex;
+  position: relative;
+}
+
+.width {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  top: -50%;
+}
+
 /* global styles */
 body {
   color: #151b19;
