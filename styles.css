@@ -540,6 +540,7 @@ footer small {
   }
   .hamburger {
     display: initial;
+    margin-left: 10px;
   }
   .hero-banner {
     grid-column: 1/3;
