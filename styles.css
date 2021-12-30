@@ -68,6 +68,10 @@ h1 {
   font-weight: 500;
   font-size: 0.9rem;
 }
+.link:hover {
+  color: #65cead;
+  border-bottom: 2px solid #65cead;
+}
 .image-preview {
   background: none;
   /* box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05); */
@@ -331,6 +335,9 @@ p.price {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
+}
+.case img {
+  pointer-events: none;
 }
 .category {
   font-size: 0.9rem;
