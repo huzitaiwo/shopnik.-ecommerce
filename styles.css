@@ -609,8 +609,7 @@ footer small {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .trending,
-  .arrival {
+  .trending {
     position: static;
   }
   .decoration {
@@ -679,6 +678,12 @@ footer small {
   }
   .showcase {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .case__1 .case-content {
+    grid-column: 1/2;
+  }
+  .arrival {
+    position: static;
   }
   .head {
     margin-bottom: 30px;
