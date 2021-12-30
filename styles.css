@@ -601,10 +601,13 @@ footer small {
     grid-column: auto;
     grid-row: auto;
   }
-  /* .case__2 {
+  .case {
+    height: auto;
+  }
+  .case__2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  } */
+  }
   .trending {
     position: static;
   }
