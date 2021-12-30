@@ -388,18 +388,19 @@ p.price {
   transform: translateY(-55%);
 }
 .trending {
-  max-width: 400px;
+  width: 400px;
   position: absolute;
   left: 0;
   bottom: 0;
 }
 .feature {
-  max-width: 230px;
+  width: 230px;
   transform: translateY(-30px);
 }
 .arrival {
   position: absolute;
   left: -30%;
+  /* width: 200px; */
   /* bottom: 0; */
 }
 
@@ -608,7 +609,8 @@ footer small {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .trending {
+  .trending,
+  .arrival {
     position: static;
   }
   .decoration {
@@ -737,6 +739,10 @@ footer small {
   }
   h2.secondary-heading {
     font-size: 1.3rem;
+  }
+  .case__1,
+  .case__2 {
+    grid-template-columns: 1fr;
   }
 }
 
