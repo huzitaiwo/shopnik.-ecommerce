@@ -1,9 +1,15 @@
+const websiteImages = document.querySelectorAll('img');
 const navigation = document.querySelector('.nav-links');
 const burgerMenu = document.querySelector('.hamburger');
 const burgerMenuIcon = document.querySelector('.hamburger img');
 const items = document.querySelectorAll('.items');
 const moreDetails = document.querySelectorAll('.more');
 const favIcons = document.querySelectorAll('.fav img');
+
+// disabled image context menu
+websiteImages.forEach(image => {
+    image.addEventListener('contextmenu', e => e.preventDefault())
+})
 
 // reponsive navigation bar feature
 burgerMenu.addEventListener('click', () => {
