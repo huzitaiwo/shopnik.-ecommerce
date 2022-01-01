@@ -375,6 +375,8 @@ p.price {
 .case__5 {
   background: #d8dbec;
   grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .case__1 .category {
   color: #fd6a76;
@@ -437,6 +439,9 @@ p.price {
   /* width: 200px; */
   /* bottom: 0; */
 }
+/* .hot {
+
+} */
 
 /* decoration-content */
 .decoration {
@@ -783,7 +788,8 @@ footer small {
     font-size: 1.3rem;
   }
   .case__1,
-  .case__2 {
+  .case__2,
+  .case__5 {
     grid-template-columns: 1fr;
   }
 }
