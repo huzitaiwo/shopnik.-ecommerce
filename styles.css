@@ -25,6 +25,9 @@ li a {
   font-weight: 700;
   padding: 3px 5px;
 }
+li a:hover {
+  color: #34cd99;
+}
 button {
   cursor: pointer;
 }
