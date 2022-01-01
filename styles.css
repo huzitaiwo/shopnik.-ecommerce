@@ -190,8 +190,8 @@ nav {
 }
 .banner-desk {
   position: absolute;
-  bottom: 0;
-  right: -10px;
+  bottom: -20px;
+  right: 0;
 }
 .sales-top {
   display: flex;
