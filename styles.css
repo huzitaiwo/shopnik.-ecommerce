@@ -439,9 +439,6 @@ p.price {
   /* width: 200px; */
   /* bottom: 0; */
 }
-/* .hot {
-
-} */
 
 /* decoration-content */
 .decoration {
@@ -648,6 +645,9 @@ footer small {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .case__5 {
+    grid-column: 1/3;
+  }
   .trending {
     position: static;
   }
@@ -724,8 +724,14 @@ footer small {
   .case__1 .case-content {
     grid-column: 1/2;
   }
+  .case__5 {
+    grid-column: 1/2;
+  }
   .arrival {
     position: static;
+  }
+  .popular {
+    width: 300px;
   }
   .head {
     margin-bottom: 30px;
