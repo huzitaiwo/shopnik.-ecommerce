@@ -195,6 +195,7 @@ nav {
 }
 .hero-banner img {
   max-width: 250px;
+  pointer-events: none;
 }
 .banner-chair {
   position: absolute;
