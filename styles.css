@@ -316,6 +316,7 @@ p.price {
   border-radius: 3px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: 0.3s ease-out;
 }
 .btn:hover {
   background: #65cead;
