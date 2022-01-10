@@ -526,6 +526,7 @@ footer img {
 }
 footer img:hover {
   opacity: 0.5;
+  transition: 0.3s ease-out;
 }
 footer p {
   font-weight: 300;
