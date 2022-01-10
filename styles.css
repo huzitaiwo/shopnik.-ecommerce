@@ -531,7 +531,7 @@ footer small {
   color: rgba(255, 255, 255, 0.6);
 }
 footer a {
-  transition: 0.3s ease;
+  transition: 0.3s ease-out;
 }
 footer a:hover {
   color: rgba(255, 255, 255, 0.5);
