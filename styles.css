@@ -84,7 +84,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.9rem;
-  transition: 0.3s ease;
+  transition: 0.3s ease-out;
 }
 .link:hover {
   color: #65cead;
