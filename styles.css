@@ -524,6 +524,9 @@ footer h4 {
 footer img {
   width: 20px;
 }
+footer img:hover {
+  opacity: 0.5;
+}
 footer p {
   font-weight: 300;
 }
