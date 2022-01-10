@@ -535,7 +535,7 @@ footer a {
   font-weight: 500;
 }
 footer a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 .line {
   width: 70px;
