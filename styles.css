@@ -459,6 +459,12 @@ p.price {
 .effect__3 {
   background: #ffedcd;
 }
+.effect__4 {
+  background: #e2f0df;
+}
+.effect__5 {
+  background: #d8dbec;
+}
 
 .head .wrapper {
   display: flex;
