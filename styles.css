@@ -364,7 +364,7 @@ p.price {
 .case {
   padding: 60px 30px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .case img {
   pointer-events: none;
@@ -446,12 +446,12 @@ p.price {
   width: 100%;
   /* left: 0;
   top: 0; */
-  filter: blur(10px) saturate(200%) brightness(100%);
-  -webkit-filter: blur(10px) saturate(200%) brightness(100%);
+  filter: blur(30px) saturate(200%) brightness(100%);
+  -webkit-filter: blur(30px) saturate(200%) brightness(100%);
   z-index: -2;
 }
 .effect__1 {
-  background: #fd6a76;
+  background: #f9d9da;
 }
 
 .head .wrapper {
