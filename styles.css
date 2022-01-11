@@ -456,6 +456,9 @@ p.price {
 .effect__2 {
   background: #daf3ed;
 }
+.effect__3 {
+  background: #ffedcd;
+}
 
 .head .wrapper {
   display: flex;
