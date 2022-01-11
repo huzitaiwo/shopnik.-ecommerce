@@ -1,7 +1,6 @@
 const websiteImages = document.querySelectorAll('img');
 const preview = document.querySelectorAll('.image-preview');
 const previewImages = document.querySelectorAll('.image-preview img');
-console.log(preview, previewImages)
 const navigation = document.querySelector('.nav-links');
 const burgerMenu = document.querySelector('.hamburger');
 const burgerMenuIcon = document.querySelector('.hamburger img');
@@ -80,7 +79,11 @@ if(document.body.id === 'main') {
         icon.addEventListener('click', () => icon.src = './icons/favorite.svg')
     });
 
-    // previewImages.forEach()
+    preview.forEach((preview, i) => {
+        preview.addEventListener('mouseenter', () => {
+            previewImages[i].classList.add('hover');
+        })
+    })
 }
 if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
