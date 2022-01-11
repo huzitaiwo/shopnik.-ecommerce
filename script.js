@@ -86,7 +86,7 @@ if(document.body.id === 'main') {
         preview.addEventListener('mouseleave', () => {
             previewImages[i].classList.remove('hover');
         });
-    })
+    });
 }
 if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
