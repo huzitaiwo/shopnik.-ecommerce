@@ -444,10 +444,11 @@ p.price {
   position: absolute;
   height: 100%;
   width: 100%;
-  left: 0;
-  top: 0;
-  filter: blur(30px) brightness(100%);
-  z-index: -1;
+  /* left: 0;
+  top: 0; */
+  filter: blur(30px) saturate(200%);
+  -webkit-filter: blur(30px) saturate(200%);
+  z-index: -2;
 }
 .effect__1 {
   background: #fd6a76;
