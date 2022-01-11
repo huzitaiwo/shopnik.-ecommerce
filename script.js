@@ -83,6 +83,9 @@ if(document.body.id === 'main') {
         preview.addEventListener('mouseenter', () => {
             previewImages[i].classList.add('hover');
         });
+        preview.addEventListener('mouseleave', () => {
+            previewImages[i].classList.remove('hover');
+        });
     })
 }
 if(document.body.id === 'item') {
