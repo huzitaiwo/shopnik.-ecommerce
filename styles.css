@@ -440,6 +440,19 @@ p.price {
   color: #8089c1;
   border-bottom: 2px solid #8089c1;
 }
+.glow-effect {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  filter: blur(30px) brightness(100%);
+  z-index: -1;
+}
+.effect__1 {
+  background: #fd6a76;
+}
+
 .head .wrapper {
   display: flex;
   position: relative;
