@@ -92,6 +92,7 @@ if(document.body.id === 'main') {
     });
     cases.forEach((caseEffect, i) => {
         caseEffect.addEventListener('mouseenter', () => caseGlow[i].classList.add('glow'));
+        caseEffect.addEventListener('mouseleave', () => caseGlow[i].classList.remove('glow'));
     })
 }
 if(document.body.id === 'item') {
