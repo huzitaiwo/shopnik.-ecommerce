@@ -83,12 +83,8 @@ if(document.body.id === 'main') {
     });
 
     preview.forEach((preview, i) => {
-        preview.addEventListener('mouseenter', () => {
-            previewImages[i].classList.add('hover');
-        });
-        preview.addEventListener('mouseleave', () => {
-            previewImages[i].classList.remove('hover');
-        });
+        preview.addEventListener('mouseenter', () => previewImages[i].classList.add('hover'));
+        preview.addEventListener('mouseleave', () => previewImages[i].classList.remove('hover'));
     });
     cases.forEach((caseEffect, i) => {
         caseEffect.addEventListener('mouseenter', () => caseGlow[i].classList.add('glow'));
