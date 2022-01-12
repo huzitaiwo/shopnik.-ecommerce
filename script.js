@@ -7,6 +7,8 @@ const burgerMenuIcon = document.querySelector('.hamburger img');
 const items = document.querySelectorAll('.items');
 const moreDetails = document.querySelectorAll('.more');
 const favIcons = document.querySelectorAll('.fav img');
+const cases = document.querySelectorAll('.case');
+
 
 // disabled image context menu
 websiteImages.forEach(image => {
