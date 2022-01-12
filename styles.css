@@ -364,7 +364,7 @@ p.price {
 .case {
   padding: 60px 30px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .case img {
   pointer-events: none;
