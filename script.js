@@ -8,6 +8,7 @@ const items = document.querySelectorAll('.items');
 const moreDetails = document.querySelectorAll('.more');
 const favIcons = document.querySelectorAll('.fav img');
 const cases = document.querySelectorAll('.case');
+const caseGlow = document.querySelectorAll('.glow-effect');
 
 
 // disabled image context menu
@@ -89,6 +90,9 @@ if(document.body.id === 'main') {
             previewImages[i].classList.remove('hover');
         });
     });
+    // cases.forEach(caseEffect => {
+    //     caseEffect.
+    // })
 }
 if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
