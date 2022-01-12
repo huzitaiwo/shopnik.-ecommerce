@@ -90,9 +90,9 @@ if(document.body.id === 'main') {
             previewImages[i].classList.remove('hover');
         });
     });
-    // cases.forEach(caseEffect => {
-    //     caseEffect.
-    // })
+    cases.forEach((caseEffect, i) => {
+        caseEffect.addEventListener('mouseenter', () => caseGlow[i].classList.add('glow'));
+    })
 }
 if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
