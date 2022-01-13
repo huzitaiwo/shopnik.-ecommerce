@@ -93,8 +93,9 @@ if(document.body.id === 'main') {
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
-            const itemImage = btn.parentElement.previousElementSibling;
-            console.log(itemImage)
+            const item = {};
+            item.img = btn.parentElement.previousElementSibling.src;
+            console.log(item)
         });
     });
 } else if(document.body.id === 'item') {
