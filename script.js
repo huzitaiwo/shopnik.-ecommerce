@@ -97,6 +97,9 @@ if(document.body.id === 'main') {
             item.img = btn.parentElement.previousElementSibling.src;
             let name = btn.parentElement.parentElement.nextElementSibling.textContent;
             item.name = name;
+            let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
+            let finalPrice = price.slice(1).trim();
+            item.price = finalPrice;
             console.log(item)
         });
     });
