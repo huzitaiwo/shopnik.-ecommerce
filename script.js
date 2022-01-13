@@ -95,6 +95,8 @@ if(document.body.id === 'main') {
         btn.addEventListener('click', e => {
             const item = {};
             item.img = btn.parentElement.previousElementSibling.src;
+            let name = btn.parentElement.parentElement.nextElementSibling.textContent;
+            item.name = name;
             console.log(item)
         });
     });
