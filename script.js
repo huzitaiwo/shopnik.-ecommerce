@@ -70,9 +70,7 @@ if(document.body.id === 'main') {
     // show && hide item details hover effect
     items.forEach((item, i) => {
         item.addEventListener('mouseenter', () => moreDetails[i].classList.add('active'))
-        item.addEventListener('mouseleave', () => {
-            moreDetails[i].classList.remove('active');
-        });
+        item.addEventListener('mouseleave', () => moreDetails[i].classList.remove('active'));
     });
 
     // add to favourite
