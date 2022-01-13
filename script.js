@@ -10,6 +10,7 @@ const moreDetails = document.querySelectorAll('.more');
 const favIcons = document.querySelectorAll('.fav img');
 const cases = document.querySelectorAll('.case');
 const caseGlow = document.querySelectorAll('.glow-effect');
+const addBtn = document.querySelectorAll('button.add');
 
 
 // disabled image context menu
@@ -86,11 +87,21 @@ if(document.body.id === 'main') {
     cases.forEach((caseEffect, i) => {
         caseEffect.addEventListener('mouseenter', () => caseGlow[i].classList.add('glow'));
         caseEffect.addEventListener('mouseleave', () => caseGlow[i].classList.remove('glow'));
-    })
+    });
+
+    // cart functionalitiesssss
+    // add item to cart
+    addBtn.forEach(btn => {
+        btn.addEventListener('click', e => {
+            const itemImage = btn.parentElement.previousElementSibling;
+            console.log(itemImage)
+        });
+    });
 } else if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
 } else if(document.body.id === 'cart') {
     console.log('cart');
 }
+
 
