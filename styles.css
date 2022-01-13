@@ -433,8 +433,11 @@ p.price {
   border-bottom: 2px solid #8089c1;
 }
 .glow-new {
-  filter: blur(10px) saturate(200%) brightness(100%);
-  -webkit-filter: blur(10px) saturate(200%) brightness(100%);
+  /* filter: blur(10px) saturate(200%) brightness(100%);
+  -webkit-filter: blur(10px) saturate(200%) brightness(100%); */
+}
+.case__1 {
+  backdrop-filter: blur(10px) saturate(200%) brightness(100%);
 }
 .category {
   font-size: 0.9rem;
