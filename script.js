@@ -1,3 +1,4 @@
+// reference from the DOM
 const websiteImages = document.querySelectorAll('img');
 const preview = document.querySelectorAll('.image-preview');
 const previewImages = document.querySelectorAll('.image-preview > img');
