@@ -21,7 +21,7 @@ websiteImages.forEach(image => {
 burgerMenu.addEventListener('click', () => {
     navigation.classList.toggle('active');
 
-    // toggle close icon
+    // toggle burger icon
     if(navigation.classList.contains('active')) {
         burgerMenuIcon.src = './icons/close.svg';
     } else {
@@ -87,12 +87,10 @@ if(document.body.id === 'main') {
         caseEffect.addEventListener('mouseenter', () => caseGlow[i].classList.add('glow'));
         caseEffect.addEventListener('mouseleave', () => caseGlow[i].classList.remove('glow'));
     })
-}
-if(document.body.id === 'item') {
+} else if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
-}
-if(document.body.id === 'cart') {
+} else if(document.body.id === 'cart') {
     console.log('cart');
 }
 
