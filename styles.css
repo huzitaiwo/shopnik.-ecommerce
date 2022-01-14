@@ -953,9 +953,19 @@ th {
 td {
   text-align: center;
 }
-td.item img {
-  width: 150px;
+td.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+td.amount button {
+  background: none;
+  border: none;
+}
+td.amount img {
+  width: 35px;
+}
+
 .qty {
   display: flex;
   align-items: center;
