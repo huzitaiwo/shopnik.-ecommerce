@@ -101,9 +101,7 @@ if(document.body.id === 'main') {
             let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
             let finalPrice = price.slice(1).trim();
             item.price = finalPrice;
-            
-            function addToCart() {
-                itemTable.innerHTML += `
+            itemTable.innerHTML += `
                 <tr class="item-in-cart">
                     <td>
                         <img src="${item.img}" alt="">
@@ -113,8 +111,7 @@ if(document.body.id === 'main') {
                     <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
                     <td>$112</td>
                 </tr>
-                `;
-            }
+            `;
         });
     });
 } else if(document.body.id === 'item') {
