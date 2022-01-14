@@ -95,7 +95,7 @@ if(document.body.id === 'main') {
     // cart functionalitiesssss
 
     // show && hide cart
-    cartBtn.addEventListener('click', () => console.log('click'));
+    cartBtn.addEventListener('click', () => cart.classList.add('active'))
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
