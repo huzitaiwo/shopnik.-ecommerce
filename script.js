@@ -104,9 +104,12 @@ if(document.body.id === 'main') {
             
             function addToCart() {
                 itemTable.innerHTML += `
-                <tr>
-                    <td><img src="${item.img}" alt=""></td>
-                    <td>$112</td>
+                <tr class="item-in-cart">
+                    <td>
+                        <img src="${item.img}" alt="">
+                        <span class="name">${item.name}</span>
+                    </td>
+                    <td>$${item.price}</td>
                     <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
                     <td>$112</td>
                 </tr>
