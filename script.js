@@ -11,6 +11,7 @@ const favIcons = document.querySelectorAll('.fav img');
 const cases = document.querySelectorAll('.case');
 const caseGlow = document.querySelectorAll('.glow-effect');
 const addBtn = document.querySelectorAll('button.add');
+const itemTable = document.querySelector('.item-table');
 
 
 // disabled image context menu
@@ -100,14 +101,24 @@ if(document.body.id === 'main') {
             let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
             let finalPrice = price.slice(1).trim();
             item.price = finalPrice;
-            console.log(item)
+            
+            function addToCart() {
+                itemTable.innerHTML += `
+                <tr>
+                    <td><img src="${item.img}" alt=""></td>
+                    <td>$112</td>
+                    <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
+                    <td>$112</td>
+                </tr>
+                `
+            }
         });
     });
 } else if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
 } else if(document.body.id === 'cart') {
-    console.log('cart');
+    addToCart();
 }
 
 
