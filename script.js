@@ -110,7 +110,7 @@ if(document.body.id === 'main') {
                     <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
                     <td>$112</td>
                 </tr>
-                `
+                `;
             }
         });
     });
@@ -118,7 +118,7 @@ if(document.body.id === 'main') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
 } else if(document.body.id === 'cart') {
-    addToCart();
+    // addToCart();
 }
 
 

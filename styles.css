@@ -945,6 +945,10 @@ tr {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
+tr.item-in-cart {
+  border-bottom: 1px solid #f4f5f7;
+  padding: 10px 0;
+}
 th {
   text-transform: uppercase;
   font-size: 1.3rem;
