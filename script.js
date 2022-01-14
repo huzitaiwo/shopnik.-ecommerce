@@ -12,6 +12,8 @@ const cases = document.querySelectorAll('.case');
 const caseGlow = document.querySelectorAll('.glow-effect');
 const addBtn = document.querySelectorAll('button.add');
 const itemTable = document.querySelector('.item-table');
+const cartBtn = document.querySelector('button.cart');
+const cart = document.querySelector('.item-log');
 
 
 // disabled image context menu
@@ -91,6 +93,9 @@ if(document.body.id === 'main') {
     });
 
     // cart functionalitiesssss
+
+    // show && hide cart
+    cartBtn.addEventListener('click', () => console.log('click'));
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {

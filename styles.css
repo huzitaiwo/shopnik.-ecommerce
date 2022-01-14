@@ -947,6 +947,10 @@ p.title {
   transform: translateX(100%);
   transition: 0.3s ease-in;
 }
+.item-log.active {
+  pointer-events: all;
+  transform: translateX(0);
+}
 table {
   /* width: 90%; */
   margin: 0 auto;
