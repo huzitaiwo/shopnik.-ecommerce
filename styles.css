@@ -943,11 +943,16 @@ p.title {
   width: 100%;
   min-height: 100%;
   z-index: 10;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: 0.3s ease-in;
 }
 table {
-  width: 100%;
+  /* width: 90%; */
+  margin: 0 auto;
   min-width: 600px;
   overflow-x: scroll;
+  background: #f5f5f5;
 }
 tr {
   display: grid;
