@@ -935,7 +935,7 @@ p.title {
 }
 
 /*********** CART PAGE ***********/
-.item-log {
+/* .item-log {
   position: fixed;
   background: rgb(0, 0, 0, 0.45);
   top: 0;
@@ -946,7 +946,7 @@ p.title {
   pointer-events: none;
   transform: translateY(-100%);
   transition: 0.5s ease;
-}
+} */
 .item-log.active {
   pointer-events: all;
   transform: translateY(0);
@@ -957,6 +957,7 @@ p.title {
 .close-cart {
   background: none;
   border: none;
+  display: block;
   margin-left: auto;
 }
 table {

@@ -14,6 +14,7 @@ const addBtn = document.querySelectorAll('button.add');
 const itemTable = document.querySelector('.item-table');
 const cartBtn = document.querySelector('button.cart');
 const cart = document.querySelector('.item-log');
+const closeCartBtn = document.querySelector('button.close-cart');
 
 
 // disabled image context menu
@@ -95,7 +96,8 @@ if(document.body.id === 'main') {
     // cart functionalitiesssss
 
     // show && hide cart
-    cartBtn.addEventListener('click', () => cart.classList.add('active'))
+    cartBtn.addEventListener('click', () => cart.classList.add('active'));
+    closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
