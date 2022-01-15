@@ -70,6 +70,7 @@ class Tabs {
 
 // check different pages to execute script
 if(document.body.id === 'main') {
+    // initiate tabs
     const salesTab = new Tabs(document.querySelector('.sales-tab'));
     salesTab.init();
 
@@ -84,20 +85,23 @@ if(document.body.id === 'main') {
         icon.addEventListener('click', () => icon.src = './icons/favorite.svg')
     });
 
+    // image scale effect
     preview.forEach((preview, i) => {
         preview.addEventListener('mouseenter', () => previewImages[i].classList.add('hover'));
         preview.addEventListener('mouseleave', () => previewImages[i].classList.remove('hover'));
     });
+
+    // case glow effect
     cases.forEach((caseEffect, i) => {
         caseEffect.addEventListener('mouseenter', () => caseGlow[i].classList.add('glow'));
         caseEffect.addEventListener('mouseleave', () => caseGlow[i].classList.remove('glow'));
     });
 
     // cart functionalitiesssss
-
     // show && hide cart
     cartBtn.addEventListener('click', () => cart.classList.add('active'));
     closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
+    
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
