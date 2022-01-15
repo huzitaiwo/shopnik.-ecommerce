@@ -935,18 +935,17 @@ p.title {
 }
 
 /*********** CART PAGE ***********/
-/* .item-log {
-  position: fixed;
-  background: rgb(0, 0, 0, 0.45);
+.item-log {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.45);
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
   z-index: 10;
   pointer-events: none;
   transform: translateY(-100%);
   transition: 0.5s ease;
-} */
+}
 .item-log.active {
   pointer-events: all;
   transform: translateY(0);
