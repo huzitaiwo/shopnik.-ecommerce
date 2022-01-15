@@ -110,7 +110,7 @@ if(document.body.id === 'main') {
             item.price = finalPrice;
             itemTable.innerHTML += `
                 <tr class="item-in-cart">
-                    <td><img src="${item.img}" alt=""></td>
+                    <td><img class="item-image" src="${item.img}" alt=""></td>
                     <td>$${item.price}</td>
                     <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
                     <td>$112</td>
