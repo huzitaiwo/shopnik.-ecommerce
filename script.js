@@ -101,17 +101,18 @@ if(document.body.id === 'main') {
     // show && hide cart
     cartBtn.addEventListener('click', () => cart.classList.add('active'));
     closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
-    
+
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
             const item = {};
             item.img = btn.parentElement.previousElementSibling.src;
-            let name = btn.parentElement.parentElement.nextElementSibling.textContent;
-            item.name = name;
+            item.name = btn.parentElement.parentElement.nextElementSibling.textContent;
             let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
             let finalPrice = price.slice(1).trim();
             item.price = finalPrice;
+
+            // cart content render
             itemTable.innerHTML += `
                 <tr class="item-in-cart">
                     <td><img class="item-image" src="${item.img}" alt=""></td>
@@ -126,7 +127,7 @@ if(document.body.id === 'main') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
 } else if(document.body.id === 'cart') {
-    // addToCart();
+    console.log('cart')
 }
 
 
