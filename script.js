@@ -5,11 +5,6 @@ const previewImages = document.querySelectorAll('.image-preview > img');
 const navigation = document.querySelector('.nav-links');
 const burgerMenu = document.querySelector('.hamburger');
 const burgerMenuIcon = document.querySelector('.hamburger img');
-const items = document.querySelectorAll('.items');
-const moreDetails = document.querySelectorAll('.more');
-const favIcons = document.querySelectorAll('.fav img');
-const cases = document.querySelectorAll('.case');
-const caseGlow = document.querySelectorAll('.glow-effect');
 const addBtn = document.querySelectorAll('button.add');
 const itemTable = document.querySelector('.item-table');
 const cartBtn = document.querySelector('button.cart');
@@ -74,6 +69,7 @@ const getItem = async (data) => {
     let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
     let finalPrice = price.slice(1).trim();
     item.price = finalPrice;
+    return item;
 }
 
 const updateUI = async (item) => {
@@ -89,6 +85,13 @@ const updateUI = async (item) => {
 
 // check different pages to execute script
 if(document.body.id === 'main') {
+    // reference from the DOM
+    const items = document.querySelectorAll('.items');
+    const moreDetails = document.querySelectorAll('.more');
+    const favIcons = document.querySelectorAll('.fav img');
+    const cases = document.querySelectorAll('.case');
+    const caseGlow = document.querySelectorAll('.glow-effect');
+
     // initiate tabs
     const salesTab = new Tabs(document.querySelector('.sales-tab'));
     salesTab.init();
