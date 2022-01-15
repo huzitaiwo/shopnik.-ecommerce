@@ -951,10 +951,18 @@ p.title {
   pointer-events: all;
   transform: translateY(0);
 }
-table {
+.item-table {
   background: #f5f5f5;
+}
+.close-cart {
+  background: none;
+  border: none;
+  margin-left: auto;
+}
+table {
   min-width: 600px;
   overflow-x: scroll;
+  width: 100%;
 }
 tr {
   display: grid;
