@@ -68,13 +68,15 @@ class Tabs {
 }
 
 const getItem = async (data) => {
-    const item = {};
+    let item = {};
     item.img = data.parentElement.previousElementSibling.src;
     item.name = data.parentElement.parentElement.nextElementSibling.textContent;
     let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
     let finalPrice = price.slice(1).trim();
     item.price = finalPrice;
-    return item;
+    let items = [];
+    items.push([item]);
+    console.log(item, items);
 }
 
 const updateUI = async (item) => {
