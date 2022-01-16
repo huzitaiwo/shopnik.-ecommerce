@@ -102,15 +102,18 @@ if(document.body.id === 'main') {
     cartBtn.addEventListener('click', () => cart.classList.add('active'));
     closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
 
+    const updateUI = (data) => {
+        const item = {};
+        item.img = data.parentElement.previousElementSibling.src;
+        item.name = data.parentElement.parentElement.nextElementSibling.textContent;
+        let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
+        let finalPrice = price.slice(1).trim();
+        item.price = finalPrice;
+    }
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
-            const item = {};
-            item.img = btn.parentElement.previousElementSibling.src;
-            item.name = btn.parentElement.parentElement.nextElementSibling.textContent;
-            let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
-            let finalPrice = price.slice(1).trim();
-            item.price = finalPrice;
+            updateUI(btn)
 
             // cart content render
             itemTable.innerHTML += `
@@ -127,7 +130,10 @@ if(document.body.id === 'main') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
 } else if(document.body.id === 'cart') {
-    console.log('cart')
+    console.log('cart');
+    if(localStorage.getItem('cartItem')) {
+
+    }
 }
 
 
