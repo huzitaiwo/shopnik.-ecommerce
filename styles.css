@@ -443,7 +443,7 @@ p.price {
 .description {
   font-size: 1.1rem;
 }
-.glow-effect {
+/* .glow-effect {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -455,31 +455,27 @@ p.price {
 .glow-effect.glow {
   filter: blur(10px) saturate(200%) brightness(100%);
   -webkit-filter: blur(10px) saturate(200%) brightness(100%);
-}
+} */
 .new-glow {
   width: 300px;
-  height: 300px;
+  height: 400px;
   position: relative;
+  background: #f9d9da;
 }
 .new-glow img {
   width: 100%;
 }
-.new-glow-effect {
+.case-contents {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
   top: 0;
-  filter: blur(10px) saturate(200%) brightness(100%);
-  -webkit-filter: blur(10px) saturate(200%) brightness(100%);
-  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .new-effect__1 {
+  filter: blur(10px) saturate(200%) brightness(100%);
+  -webkit-filter: blur(10px) saturate(200%) brightness(100%);
   background: #f9d9da;
-}
-.case-contents {
-  background: #f9d9da;
-  overflow: hidden;
 }
 .effect__1 {
   background: #f9d9da;
