@@ -82,8 +82,8 @@ const updateUI = (item) => {
         <tr class="item-in-cart">
             <td><img class="item-image" src="${item.img}" alt=""></td>
             <td>$${item.price}</td>
-            <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
-            <td>$112</td>
+            <td class="amount"><button><img src="./icons/add.svg" alt=""></button>${1}<button><img src="./icons/add.svg" alt=""></button></td>
+            <td>$${item.price}</td>
         </tr>
     `;
 }
