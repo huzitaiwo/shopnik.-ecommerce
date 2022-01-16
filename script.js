@@ -102,7 +102,7 @@ if(document.body.id === 'main') {
     cartBtn.addEventListener('click', () => cart.classList.add('active'));
     closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
 
-    const updateUI = (data) => {
+    const getItem = (data) => {
         const item = {};
         item.img = data.parentElement.previousElementSibling.src;
         item.name = data.parentElement.parentElement.nextElementSibling.textContent;
@@ -113,17 +113,17 @@ if(document.body.id === 'main') {
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
-            updateUI(btn)
+            getItem(btn)
 
             // cart content render
-            itemTable.innerHTML += `
-                <tr class="item-in-cart">
-                    <td><img class="item-image" src="${item.img}" alt=""></td>
-                    <td>$${item.price}</td>
-                    <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
-                    <td>$112</td>
-                </tr>
-            `;
+            // itemTable.innerHTML += `
+            //     <tr class="item-in-cart">
+            //         <td><img class="item-image" src="${item.img}" alt=""></td>
+            //         <td>$${item.price}</td>
+            //         <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
+            //         <td>$112</td>
+            //     </tr>
+            // `;
         });
     });
 } else if(document.body.id === 'item') {
