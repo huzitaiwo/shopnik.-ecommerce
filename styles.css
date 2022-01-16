@@ -435,13 +435,6 @@ p.price {
   color: #8089c1;
   border-bottom: 2px solid #8089c1;
 }
-.glow-new {
-  filter: blur(10px) saturate(200%) brightness(100%);
-  -webkit-filter: blur(10px) saturate(200%) brightness(100%);
-}
-/* .case__1 {
-  backdrop-filter: blur(10px) saturate(200%) brightness(100%);
-} */
 .category {
   font-size: 0.9rem;
   font-weight: 700;
@@ -462,6 +455,31 @@ p.price {
 .glow-effect.glow {
   filter: blur(10px) saturate(200%) brightness(100%);
   -webkit-filter: blur(10px) saturate(200%) brightness(100%);
+}
+.new-glow {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.new-glow img {
+  width: 100%;
+}
+.new-glow-effect {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  filter: blur(20px) saturate(200%) brightness(100%);
+  -webkit-filter: blur(20px) saturate(200%) brightness(100%);
+  z-index: -1;
+}
+.new-effect__1 {
+  background: #f9d9da;
+}
+.case-contents {
+  background: #f9d9da;
+  overflow: hidden;
 }
 .effect__1 {
   background: #f9d9da;
