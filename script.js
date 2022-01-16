@@ -74,12 +74,6 @@ const getItem = async (data) => {
     let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
     let finalPrice = price.slice(1).trim();
     item.price = finalPrice;
-
-    const items = [];
-    items.push(item);
-    
-    localStorage.setItem('item', items);
-    // localStorage.clear();
 }
 
 const updateUI = async (item) => {
@@ -136,11 +130,6 @@ if(document.body.id === 'main') {
     itemsTab.init();
 } else if(document.body.id === 'cart') {
     console.log('cart')
-    if(localStorage.getItem('item')) {
-        localStorage.getItem('item');
-        updateUI(localStorage.getItem('item'));
-
-    }
 }
 
 
