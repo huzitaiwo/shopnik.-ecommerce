@@ -102,18 +102,20 @@ if(document.body.id === 'main') {
     cartBtn.addEventListener('click', () => cart.classList.add('active'));
     closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
 
-    const getItem = (data) => {
+    const getItem = async (data) => {
         const item = {};
         item.img = data.parentElement.previousElementSibling.src;
         item.name = data.parentElement.parentElement.nextElementSibling.textContent;
         let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
         let finalPrice = price.slice(1).trim();
         item.price = finalPrice;
+
+        return{ item };
     }
     // add item to cart
     addBtn.forEach(btn => {
         btn.addEventListener('click', e => {
-            getItem(btn)
+            getItem(btn).then(data => console.log(data));
 
             // cart content render
             // itemTable.innerHTML += `
