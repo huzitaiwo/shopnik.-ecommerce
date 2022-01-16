@@ -365,9 +365,6 @@ p.price {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  box-shadow: 120px 80px 40px 20px #0ff;
-  /* in order: x offset, y offset, blur size, spread size, color */
-  /* blur size and spread size are optional (they default to 0) */
 }
 .case img {
   pointer-events: none;
@@ -378,6 +375,9 @@ p.price {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 300px;
+  /* box-shadow: 0px 0px 20px 20px #f9d9da; */
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
 }
 .case__1 .case-content {
   grid-column: 2/3;
