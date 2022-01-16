@@ -470,8 +470,8 @@ p.price {
   width: 100%;
   left: 0;
   top: 0;
-  filter: blur(20px) saturate(200%) brightness(100%);
-  -webkit-filter: blur(20px) saturate(200%) brightness(100%);
+  filter: blur(10px) saturate(200%) brightness(100%);
+  -webkit-filter: blur(10px) saturate(200%) brightness(100%);
   z-index: -1;
 }
 .new-effect__1 {
