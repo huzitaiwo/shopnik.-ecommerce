@@ -67,19 +67,16 @@ class Tabs {
     }
 }
 
-const getItem = async (data) => {
+const getItem = (data) => {
     let item = {};
     item.img = data.parentElement.previousElementSibling.src;
     item.name = data.parentElement.parentElement.nextElementSibling.textContent;
     let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
     let finalPrice = price.slice(1).trim();
     item.price = finalPrice;
-    let items = [];
-    items.push([item]);
-    console.log(item, items);
 }
 
-const updateUI = async (item) => {
+const updateUI = (item) => {
     itemTable.innerHTML += `
         <tr class="item-in-cart">
             <td><img class="item-image" src="${item.img}" alt=""></td>
