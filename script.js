@@ -81,7 +81,7 @@ const updateUI = (item) => {
     itemTable.innerHTML += `
         <tr class="item-in-cart">
             <td><img class="item-image" src="${item.img}" alt=""></td>
-            <td>$${item.price}</td>
+            <td class="item-price">$${item.price}</td>
             <td class="amount"><button><img src="./icons/add.svg" alt=""></button>${1}<button><img src="./icons/add.svg" alt=""></button></td>
             <td>$${item.price}</td>
         </tr>
@@ -90,7 +90,10 @@ const updateUI = (item) => {
 }
 
 const showtotal = () => {
-    console.log('showtotal');
+    const total = [];
+    const items = document.querySelectorAll('.item-price');
+
+    
 }
 
 // check different pages to execute script
