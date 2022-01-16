@@ -86,6 +86,11 @@ const updateUI = (item) => {
             <td>$${item.price}</td>
         </tr>
     `;
+    showtotal();
+}
+
+const showtotal = () => {
+    console.log('showtotal');
 }
 
 // check different pages to execute script
@@ -124,7 +129,6 @@ if(document.body.id === 'main') {
     addBtn.forEach((btn, i) => {
         btn.addEventListener('click', () => {
             getItem(btn);
-            console.log(i);
         });
     });
 } else if(document.body.id === 'item') {
