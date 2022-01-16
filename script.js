@@ -67,13 +67,14 @@ class Tabs {
     }
 }
 
-const getItem = (data) => {
+const getItem = (btn) => {
     let item = {};
-    item.img = data.parentElement.previousElementSibling.src;
-    item.name = data.parentElement.parentElement.nextElementSibling.textContent;
-    let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
+    item.img = btn.parentElement.previousElementSibling.src;
+    item.name = btn.parentElement.parentElement.nextElementSibling.textContent;
+    let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
     let finalPrice = price.slice(1).trim();
     item.price = finalPrice;
+    updateUI(item);
 }
 
 const updateUI = (item) => {
@@ -123,8 +124,9 @@ if(document.body.id === 'main') {
     addBtn.forEach((btn, i) => {
         btn.addEventListener('click', () => {
             getItem(btn);
-        })
-    })
+            console.log(i);
+        });
+    });
 } else if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
