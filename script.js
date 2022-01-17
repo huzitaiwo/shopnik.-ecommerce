@@ -102,6 +102,7 @@ const showtotal = () => {
         return total;
     }, 0);
 
+    document.querySelector('.cart-count').style.display = 'initial';
     document.querySelector('.cart-count').textContent = total.length;
     
 }
