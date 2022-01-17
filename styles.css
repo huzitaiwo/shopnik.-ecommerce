@@ -327,6 +327,10 @@ p.price {
   padding: 30px 0;
   margin-bottom: 60px;
 }
+.head .wrapper {
+  display: flex;
+  position: relative;
+}
 .products-contents {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -463,11 +467,6 @@ p.price {
 }
 .effect__5 {
   background: #d8dbec;
-}
-
-.head .wrapper {
-  display: flex;
-  position: relative;
 }
 .width {
   width: 300px;
