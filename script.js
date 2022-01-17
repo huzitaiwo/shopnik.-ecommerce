@@ -101,7 +101,8 @@ const showtotal = () => {
         total += item;
         return total;
     }, 0);
-    console.log(total, totalMoney);
+
+    document.querySelector()
     
 }
 
