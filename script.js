@@ -97,7 +97,11 @@ const showtotal = () => {
         total.push(parseInt(item.textContent));
     });
 
-    console.log(total);
+    const totalMoney = total.reduce((total, item) => {
+        total += item;
+        return total;
+    }, 0);
+    console.log(total, totalMoney);
     
 }
 
