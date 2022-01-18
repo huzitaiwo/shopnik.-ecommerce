@@ -108,15 +108,17 @@ const showtotal = () => {
     
 }
 
-const increasePrice = () => {
-    const incBtn = document.querySelectorAll('button.inc');
-    const decBtn = document.querySelectorAll('button.dec');
-    incBtn.forEach((btn, i) => {
-        btn.addEventListener('click', () => {
-            console.log(btn.nextElementSibling);
-        })
-    })
-}
+// const increasePrice = () => {
+//     const incBtn = document.querySelectorAll('button.inc');
+//     const decBtn = document.querySelectorAll('button.dec');
+//     incBtn.forEach((btn, i) => {
+//         btn.addEventListener('click', () => {
+//             let count = btn.parentElement.textContent;
+//             console.log(count);
+//             count+=1;
+//         })
+//     })
+// }
 
 // check different pages to execute script
 if(document.body.id === 'main') {
