@@ -111,6 +111,11 @@ const showtotal = () => {
 const increasePrice = () => {
     const incBtn = document.querySelectorAll('button.inc');
     const decBtn = document.querySelectorAll('button.dec');
+    incBtn.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+            console.log(btn.nextElementSibling);
+        })
+    })
 }
 
 // check different pages to execute script
