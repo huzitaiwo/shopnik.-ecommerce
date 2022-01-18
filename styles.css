@@ -20,13 +20,20 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b9b9b9;
 }
-/* global styles */
+
+/* __________global styles__________ */
 body {
   color: #151b19;
 }
 section,
 footer {
   padding: 60px 0;
+}
+h1 {
+  font-weight: 400;
+  max-width: 450px;
+  line-height: 1.4;
+  font-size: 2rem;
 }
 li {
   list-style: none;
@@ -47,12 +54,6 @@ button {
 }
 img {
   width: 100%;
-}
-h1 {
-  font-weight: 400;
-  max-width: 450px;
-  line-height: 1.4;
-  font-size: 2rem;
 }
 .container {
   max-width: 1200px;
