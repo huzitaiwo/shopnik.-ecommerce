@@ -136,7 +136,7 @@ if(document.body.id === 'main') {
     itemsTab.init();
 } else if(document.body.id === 'cart') {
     console.log('cart')
-    if(localStorage.getItem('cartItem')) {
+    if(localStorage.getItem('item')) {
         localStorage.getItem('item');
         updateUI(localStorage.getItem('item'));
 
