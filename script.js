@@ -74,8 +74,11 @@ const getItem = async (data) => {
     let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
     let finalPrice = price.slice(1).trim();
     item.price = finalPrice;
+
+    const items = [];
+    items.push(item);
     
-    localStorage.setItem('item', item);
+    localStorage.setItem('item', items);
     // localStorage.clear();
 }
 
@@ -120,9 +123,6 @@ if(document.body.id === 'main') {
     });
 
     // cart functionalitiesssss
-    // show && hide cart
-    cartBtn.addEventListener('click', () => cart.classList.add('active'));
-    closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
 
     
     // add item to cart
