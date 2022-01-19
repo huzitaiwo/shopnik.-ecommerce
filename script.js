@@ -67,6 +67,28 @@ class Tabs {
     }
 }
 
+const getItem = async (data) => {
+    const item = {};
+    item.img = data.parentElement.previousElementSibling.src;
+    item.name = data.parentElement.parentElement.nextElementSibling.textContent;
+    let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
+    let finalPrice = price.slice(1).trim();
+    item.price = finalPrice;
+    
+    localStorage.setItem('item', item);
+    // localStorage.clear();
+}
+
+const updateUI = async (item) => {
+    itemTable.innerHTML += `
+        <tr class="item-in-cart">
+            <td><img class="item-image" src="${item.img}" alt=""></td>
+            <td>$${item.price}</td>
+            <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
+            <td>$112</td>
+        </tr>
+    `;
+}
 
 // check different pages to execute script
 if(document.body.id === 'main') {
@@ -102,38 +124,21 @@ if(document.body.id === 'main') {
     cartBtn.addEventListener('click', () => cart.classList.add('active'));
     closeCartBtn.addEventListener('click', () => cart.classList.remove('active'));
 
-    const getItem = async (data) => {
-        const item = {};
-        item.img = data.parentElement.previousElementSibling.src;
-        item.name = data.parentElement.parentElement.nextElementSibling.textContent;
-        let price = data.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
-        let finalPrice = price.slice(1).trim();
-        item.price = finalPrice;
-
-        return{ item };
-    }
+    
     // add item to cart
-    addBtn.forEach(btn => {
-        btn.addEventListener('click', e => {
-            getItem(btn).then(data => console.log(data));
-
-            // cart content render
-            // itemTable.innerHTML += `
-            //     <tr class="item-in-cart">
-            //         <td><img class="item-image" src="${item.img}" alt=""></td>
-            //         <td>$${item.price}</td>
-            //         <td class="amount"><button><img src="./icons/add.svg" alt=""></button>10<button><img src="./icons/add.svg" alt=""></button></td>
-            //         <td>$112</td>
-            //     </tr>
-            // `;
-        });
-    });
+    addBtn.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+            getItem(btn);
+        })
+    })
 } else if(document.body.id === 'item') {
     const itemsTab = new Tabs(document.querySelector('.items-tab'));
     itemsTab.init();
 } else if(document.body.id === 'cart') {
-    console.log('cart');
+    console.log('cart')
     if(localStorage.getItem('cartItem')) {
+        localStorage.getItem('item');
+        updateUI(localStorage.getItem('item'));
 
     }
 }
