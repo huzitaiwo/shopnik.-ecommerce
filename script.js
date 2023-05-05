@@ -67,46 +67,46 @@ class Tabs {
     }
 }
 
-const getItem = (btn) => {
-    let item = {};
-    item.img = btn.parentElement.previousElementSibling.src;
-    item.name = btn.parentElement.parentElement.nextElementSibling.textContent;
-    let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
-    let finalPrice = price.slice(1).trim();
-    item.price = finalPrice;
-    updateUI(item);
-}
+// const getItem = (btn) => {
+//     let item = {};
+//     item.img = btn.parentElement.previousElementSibling.src;
+//     item.name = btn.parentElement.parentElement.nextElementSibling.textContent;
+//     let price = btn.parentElement.parentElement.nextElementSibling.nextElementSibling.textContent;
+//     let finalPrice = price.slice(1).trim();
+//     item.price = finalPrice;
+//     updateUI(item);
+// }
 
-const updateUI = (item) => {
-    itemTable.innerHTML += `
-        <tr class="item-in-cart">
-            <td><img class="item-image" src="${item.img}" alt=""></td>
-            <td>$<span class="item-price">${item.price}<span></td>
-            <td class="amount"><button class="inc"><img src="./icons/add.svg" alt=""></button>${1}<button class="dec"><img src="./icons/add.svg" alt=""></button></td>
-            <td>$${item.price}</td>
-        </tr>
-    `;
-    showtotal();
-    increasePrice();
-}
+// const updateUI = (item) => {
+//     itemTable.innerHTML += `
+//         <tr class="item-in-cart">
+//             <td><img class="item-image" src="${item.img}" alt=""></td>
+//             <td>$<span class="item-price">${item.price}<span></td>
+//             <td class="amount"><button class="inc"><img src="./icons/add.svg" alt=""></button>${1}<button class="dec"><img src="./icons/add.svg" alt=""></button></td>
+//             <td>$${item.price}</td>
+//         </tr>
+//     `;
+//     showtotal();
+//     increasePrice();
+// }
 
-const showtotal = () => {
-    const total = [];
-    const items = document.querySelectorAll('.item-price');
+// const showtotal = () => {
+//     const total = [];
+//     const items = document.querySelectorAll('.item-price');
 
-    items.forEach(item => {
-        total.push(parseInt(item.textContent));
-    });
+//     items.forEach(item => {
+//         total.push(parseInt(item.textContent));
+//     });
 
-    const totalMoney = total.reduce((total, item) => {
-        total += item;
-        return total;
-    }, 0);
+//     const totalMoney = total.reduce((total, item) => {
+//         total += item;
+//         return total;
+//     }, 0);
 
-    document.querySelector('.cart-count').style.display = 'initial';
-    document.querySelector('.cart-count').textContent = total.length;
+//     document.querySelector('.cart-count').style.display = 'initial';
+//     document.querySelector('.cart-count').textContent = total.length;
     
-}
+// }
 
 // const increasePrice = () => {
 //     const incBtn = document.querySelectorAll('button.inc');
